@@ -1,0 +1,39 @@
+line console 0:	Configures password for local console access
+line vty 0 4:	Configures password for remote access through Telnet/SSH
+
+Windows Commands:
+1 ipconfig – Displays the IP address, subnet mask, and default gateway of your Windows computer.
+2 ipconfig /all – Displays detailed network configuration information, including the IP address, MAC address (Physical Address), DNS servers, DHCP status, and default gateway.
+3 `ping` – Checks connectivity between your computer and another device or server by sending test packets and measuring the response time.
+4 `nslookup` – Finds the IP address associated with a domain name by querying a DNS (Domain Name System) server.
+5 `tracert` – Traces the route taken by data packets from your computer to a destination, showing each network hop along the way.
+6 `netstat -rn` – Displays the computer’s IP routing table, showing destination networks, gateways, interface addresses, and routing metrics in numerical form.
+7 `nbtstat -n` – Displays the local NetBIOS names registered on your Windows computer.
+8 `tasklist` – Displays a list of all currently running processes and their Process IDs (PIDs) on your Windows computer.
+9 `arp -a` – Displays the ARP table, showing IP addresses and their corresponding MAC addresses of devices on the local network.
+10 `hostname` – Displays the name of your computer on the network.
+11 `systeminfo` – Displays detailed information about your computer, including the Windows version, processor, RAM, system manufacturer, and network details.
+12 `netsh interface show interface` – Displays all network interfaces on your Windows computer, their names, types, administrative status, and connection status.
+13 `net config workstation` – Displays information about the Workstation service, including the computer name, username, and workgroup or domain details.
+14 `getmac` – Displays the MAC addresses of the network adapters installed on your Windows computer.
+15 `route print` – Displays the IP routing table, showing network destinations, gateways, and interface details used by Windows to forward packets.
+
+
+LINUX Commands:
+1 `hostname` – Displays the name of your Linux computer on the network.
+2 `ifconfig` – Displays the network interface configuration, including IP address, MAC address, subnet mask, and network interface status in Linux.
+3 `hostid` – Displays the unique hexadecimal identifier of the Linux host system.
+4 `host` – Queries DNS (Domain Name System) to find the IP address of a domain name or the domain name associated with an IP address in Linux.
+5 `nslookup` – Queries a DNS server to find the IP address associated with a domain name or the domain name associated with an IP address in Linux.
+6 `nmap` – Scans a network to identify active devices, open ports, and running services.
+7 `netstat -n` – Displays active network connections and listening ports using numerical IP addresses and port numbers without resolving them into names.
+8 `traceroute` – Traces the route taken by data packets from your Linux computer to a destination, showing each network hop along the way.
+9 `ip route` – Displays the IP routing table of a Linux system, showing destination networks, gateways, and routes used to forward packets.
+10 `ip link` – Displays information about network interfaces in Linux, including interface names, MAC addresses, and their status (UP or DOWN).
+11 `getmac` – Displays the MAC addresses of network adapters; this command is available in Windows, while Linux typically uses `ip link` or `ip link show` to view MAC addresses.
+12 `ss -at` – Displays all TCP sockets, including established connections and listening TCP ports, on a Linux system.
+13 `ss -s` – Displays a summary of socket statistics on a Linux system, including the number of TCP, UDP, and other network sockets.
+14 `dig` – Queries DNS servers to retrieve detailed information about a domain name, including its IP address and DNS records.
+15 `arp -a` – Displays the ARP table in Linux, showing IP addresses and their corresponding MAC addresses of devices on the local network.
+
+
