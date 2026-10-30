@@ -37,3 +37,50 @@ LINUX Commands:
 15 `arp -a` – Displays the ARP table in Linux, showing IP addresses and their corresponding MAC addresses of devices on the local network.
 
 
+
+wireshark commands:
+Windows CMD commands
+- ipconfig
+- nslookup facebook.com
+- nslookup instagram.com
+- nslookup youtube.com
+
+Wireshark capture filters
+- tcp
+- host 192.168.1.1
+- net 192.168.1.0/24
+- port 80
+- not port 22
+
+Wireshark display filters
+- tcp
+- http
+- tls or ssl
+- dns
+- tcp.port == 80
+- tcp.port == 443
+- udp.port == 53
+- icmp
+- not arp
+
+IP address filters
+- ip.addr == 192.168.1.1
+- ip.src == 10.0.0.5
+- ip.dst == 8.8.8.8
+
+TCP flag filters
+- SYN: tcp.flags.syn == 1
+- PSH: tcp.flags.push == 1
+- RST: tcp.flags.reset == 1
+- Initial SYN: tcp.flags.syn == 1 and tcp.flags.ack == 0    (replace syn with push and reset) 
+
+TCP analysis filters
+- tcp.analysis.flags
+- tcp.analysis.retransmission
+
+HTTP request filter
+- http.request.method == "POST"
+
+Sent and received TCP packets
+- Sent: tcp && ip.src == YOUR_IP
+- Received: tcp && ip.dst == YOUR_IP
